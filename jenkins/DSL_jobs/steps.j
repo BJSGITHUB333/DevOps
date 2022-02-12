@@ -1,5 +1,5 @@
 
-job('job_dsl_example') {
+job('valaxyjob') {
 
     description('This is my awesome Job')
 
@@ -11,11 +11,11 @@ job('job_dsl_example') {
     }
 
     scm {
-        git('https://github.com/jenkins-docs/simple-java-maven-app', 'master')
+        git('https://github.com/BJSGITHUB333/DevOps.git', 'master')
     }
 
     triggers {
-        cron('H 5 * * 7')
+        cron('00 00 * * *')
     }
 
     steps {
