@@ -1,9 +1,9 @@
-job('maven_dsl') {
+job('mymavenjob') {
 
     description('Maven dsl project')
 
     scm {
-        git('https://github.com/jenkins-docs/simple-java-maven-app', 'master', {node -> node / 'extensions' << '' })
+        git(https://github.com/BJSGITHUB333/DevOps.git'', 'master', {node -> node / 'extensions' << '' })
     }
 
     steps {
