@@ -15,5 +15,6 @@ job('mymavenjob') {
             mavenInstallation('maven')
             goals('test')
         }
-        
+     }   
+ }       
         
