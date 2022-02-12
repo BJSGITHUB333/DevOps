@@ -1,9 +1,9 @@
-job('mymavenjobs') {
+job('mymavenjob2') {
 
     description('Maven dsl project')
 
     scm {
-       git('https://github.com/BJSGITHUB333/maven-hello-world.git', 'master', {node -> node / 'extensions' << '' })
+        git('https://github.com/BJSGITHUB333/maven-hello-world.git', 'master', {node -> node / 'extensions' << '' })
     }
 
     steps {
