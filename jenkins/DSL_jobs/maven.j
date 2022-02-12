@@ -15,16 +15,4 @@ job('mymavenjob') {
             mavenInstallation('maven')
             goals('test')
         }
-        shell('''
-            echo ************RUNNING THE JAR************************
-            java -jar /var/lib/jenkins/workspace/maven_dsl/target/my-app-1.0-SNAPSHOT.jar
-        ''')
-    }
-
-    publishers {
-        archiveArtifacts('target/*.jar')
-        archiveJunit('target/surefire-reports/*.xml')
-        mailer('valaxytech@gmail.com', true, true)
-    }
-}
-
+        
