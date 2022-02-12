@@ -24,7 +24,7 @@ job('mymavenjob3') {
     publishers {
         archiveArtifacts('target/*.jar')
         archiveJunit('target/surefire-reports/*.xml')
-        mailer('bjayasimha23@gmail.com', true, true)
+        mailer('valaxyjob@gmail.com', true, true)
     }
 }
 
