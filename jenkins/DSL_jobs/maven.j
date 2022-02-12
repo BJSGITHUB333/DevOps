@@ -3,7 +3,7 @@ job('mymavenjob') {
     description('Maven dsl project')
 
     scm {
-        git(https://github.com/BJSGITHUB333/DevOps.git'', 'master', {node -> node / 'extensions' << '' })
+        git('https://github.com/BJSGITHUB333/DevOps.git', 'master', {node -> node / 'extensions' << '' })
     }
 
     steps {
@@ -15,5 +15,5 @@ job('mymavenjob') {
             mavenInstallation('maven')
             goals('test')
         }
-     }   
+        
         
