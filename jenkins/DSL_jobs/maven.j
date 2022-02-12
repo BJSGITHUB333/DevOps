@@ -1,4 +1,4 @@
-job('mymavenjob 2') {
+job('mymavenjobs') {
 
     description('Maven dsl project')
 
