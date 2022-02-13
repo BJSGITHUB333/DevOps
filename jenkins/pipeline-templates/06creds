@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        secret = credentials('TEST')
+        secret = credentials('badimela jayasimha')
     }
     stages {
         stage('Example stage 1') {
